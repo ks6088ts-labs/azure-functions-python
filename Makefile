@@ -94,3 +94,11 @@ docs-serve: ## serve documentation
 
 .PHONY: ci-test-docs
 ci-test-docs: docs ## run CI test for documentation
+
+# ---
+# Project
+# ---
+
+.PHONY: run
+run: ## run Azure Functions
+	uv run func start
