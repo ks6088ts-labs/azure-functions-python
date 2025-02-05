@@ -5,9 +5,9 @@ set -eux
 # Variables
 LOCATION=eastus
 RANDOM_SUFFIX=$(openssl rand -hex 4)
-RESOURCE_GROUP_NAME="rg-adhoc-azure-functions-$RANDOM_SUFFIX"
+RESOURCE_GROUP_NAME="rg-adhoc-azure-functions-python-$RANDOM_SUFFIX"
 STORAGE_NAME=stadhoc"$RANDOM_SUFFIX"
-FUNCTION_APP_NAME=adhoc-azure-functions-"$RANDOM_SUFFIX"
+FUNCTION_APP_NAME=adhoc-azure-functions-python-"$RANDOM_SUFFIX"
 
 # Create a resource group
 az group create \
